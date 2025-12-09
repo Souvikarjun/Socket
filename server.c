@@ -53,7 +53,7 @@ int main(int argc, char *argv[]){
     if(newsockfd<0){
         error("Error while on accept");
     }
-
+    fprintf(stdout, "Connected to the client\n");
     while (1)
     {
         bzero(buffer, 255);

@@ -49,7 +49,7 @@ int main(int argc, char *argv[]){
     if(connect(sockfd, (struct sockaddr *) &server_addr, sizeof(server_addr))<0 ){
         error("Connection Faild");
     }
-
+    fprintf(stdout, "Connected to the server\n");
     while (1)
     {
         bzero(buffer, 255);
